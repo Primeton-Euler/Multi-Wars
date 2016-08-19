@@ -1,0 +1,37 @@
+<assembly  
+    xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">  
+    <id>assembly</id>
+    <formats>
+        <format>war</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <!-- 
+    <fileSets>
+        <fileSet>
+            <directory>target</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>bootstrap.jar</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+     -->
+    <files>
+    	<file>
+    		<source>../war1/target/war1-0.0.1-SNAPSHOT.war</source>
+    		<outputDirectory>/</outputDirectory>
+    		<destName>war1.war</destName>
+    	</file>
+    	<file>
+    		<source>../war2/target/war2-0.0.1-SNAPSHOT.war</source>
+    		<outputDirectory>/</outputDirectory>
+    		<destName>war2.war</destName>
+    	</file>
+    	<file>
+    		<source>Dockerfile</source>
+    		<outputDirectory>/</outputDirectory>
+    	</file>
+    </files>
+</assembly>
