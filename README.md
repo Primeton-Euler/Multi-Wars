@@ -45,3 +45,13 @@ war1，war2是2个J2EE WEB项目，可以根据项目需要新建任意多个war
 登陆DevOps平台，新建一个产品和一个版本，在该产品版本下，新建一个组件，类型选择`JavaEE应用`类型，提交示例代码，进行编译打包部署等操作。部署完成后，显示的应用访问地址，你需要加上应用名后缀才能访问。  
   
 如果是遵循标准一个WAR部署到一个容器，参考示例项目 [https://github.com/Primeton-Euler/DevOps-Examples](https://github.com/Primeton-Euler/DevOps-Examples)  
+  
+## Binary Package  
+  
+如果使用上传介质包 的方式进行产品部署，介质包需要遵循规范，根目录下必须有Dockerfile。其中的多个war文件可以随意放置，但是要确保Dockerfile引用这些war文件的路径正确。  
+  
+`# app.war`  
+`# |- Dockerfile`  
+`# |- app1.war`  
+`# |- app2.war`  
+`# |- ...`  
