@@ -44,3 +44,4 @@ Dockerfile参考示例：
 war1，war2是2个J2EE WEB项目，可以根据项目需要新建任意多个war项目，package项目是对需要部署到同一个WEB应用服务器的war进行打包，自定义Dockerfile文件 [package/Dockerfile](https://github.com/Primeton-Euler/Multi-Wars/blob/master/package/Dockerfile)。  
 登陆DevOps平台，新建一个产品和一个版本，在该产品版本下，新建一个组件，类型选择`JavaEE应用`类型，提交示例代码，进行编译打包部署等操作。部署完成后，显示的应用访问地址，你需要加上应用名后缀才能访问。  
   
+如果是遵循标准一个WAR部署到一个容器，参考示例项目 [https://github.com/Primeton-Euler/DevOps-Examples](https://github.com/Primeton-Euler/DevOps-Examples)  
